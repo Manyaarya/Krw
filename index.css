@@ -1,37 +1,43 @@
 *{
     margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
-}
-
-header ul{
-   height: 70px;
     list-style-type: none;
-    justify-content: space-around;
-    
-    padding-top: 10px;
-    background-color: whitesmoke;
 
 }
+
 .menu{
+   
     display: flex;
-    justify-content: space-between;
-    width: 1000px;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.menu ul{
+    display: flex;
     
-    margin-top: 25px;
-
-}
-.links{
-    display: flex;
-    justify-content: flex-end;
+    text-transform: none;
+    font-size: larger;
+    margin-left: 15px;
 }
 
-.menu a{
+a{
+    padding-right: 20px;
+    text-transform: none;
     color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: large;
-}
-.header2{
-    display: flex;
 }
 
+.container{
+    padding-top: 20px;
+    height: 50px;
+    background-color: pink;
+    
+}
+
+.items{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    
+}
