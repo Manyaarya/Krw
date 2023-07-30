@@ -1,93 +1,37 @@
 *{
     margin: auto;
-}
-
-.logo-img img{
-    height: 60px;
-    width: auto;
-    border: 5px solid black;
-    border-radius: 50%;
     
 }
 
-@keyframes exam{
-    0%{background-color: rgb(248, 160, 214); a{color: rgb(255, 255, 255);}}
-    25%{background-color: #d46fbb;a{color:gray;}}
-    25%{background-color: rgb(238, 59, 163);a{color:rgb(199, 179, 179);}}
-    25%{background-color: rgba(255, 74, 164, 0.5);a{color:rgb(247, 243, 243);}}
-
-
-}
-nav ul{
+header ul{
+   height: 70px;
     list-style-type: none;
+    justify-content: space-around;
+    
+    padding-top: 10px;
+    background-color: whitesmoke;
+
+}
+.menu{
     display: flex;
-    justify-content: center;
     justify-content: space-between;
-    padding: 10px 150px 15px 150px;
+    width: 1000px;
     
-    background-color: rgb(250, 240, 246);
-    animation-name: exam;
-    animation-duration: 10s;
-   
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
-    
+    margin-top: 25px;
+
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
 }
 
-a{
-    color: rgb(15, 15, 15);
-}
-
-a:hover{
+.menu a{
     color: black;
-    background-color: pink;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
 }
-
-.search-box{
-   
+.header2{
     display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-image: url('../krw/bgimg.jpg');
 }
 
-.search-box input{
-    border: 2px solid rgb(255, 100, 195);
-    height: 20px;
-    padding: 5px 10px 5px 10px;
-    width: 600px;
-    border-radius: 20%;
-    
-}
-
-.kgbgg{
-    
-    background-image:linear-gradient(rgb(240, 208, 236),rgb(242, 171, 245),rgb(228, 125, 142)) ;
-    display: flex;
-    
-
-}
-
-.kgbgg img{
-    border: 5px solid black;
-
-}
-
-
-
-.text-block{
-    position: absolute;
-    top: 560px;
-    width: 700px;
-    margin-left:310px;
-    text-align: center;
-    font-size: larger;
-    font-family:cursive ;
-    forced-color-adjust: ;
-    color: white;
-    border: 2px solid black;
-
-}
