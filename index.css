@@ -1,33 +1,57 @@
 *{
     margin: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    list-style-type: none;
 
 }
 
+#logo{
+    font-family: cursive;
+    font-style: italic;
+    font-size: larger;
+    background: -webkit-linear-gradient(#bb7eb6, #c9c6c8,rgb(255, 127, 148), rgb(207, 164, 181));
+    border: 0.5px solid pink;
+    padding-right: 0;
+    margin-right: 0;
+    z-index: -1;
+    padding-left: 18px;
+    border-radius: 30%;
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.talent{
+    padding-left: 10px;
+}
 .menu{
-   
+    border-bottom: 2px solid grey;
     display: flex;
     height: 60px;
     padding-top: 10px;
 }
 
+.Links{
+    
+    margin-right: 50px;
+}
+
 .menu ul{
     display: flex;
     
-    text-transform: none;
-    font-size: larger;
-    margin-left: 15px;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin-left: 30px;
 }
 
 a{
-    padding-right: 20px;
-    text-transform: none;
     color: black;
+    padding-right: 20px;
+    text-decoration: none;
+    
 }
 
-.container{
+.cont{
     padding-top: 20px;
     height: 50px;
     background-color: pink;
@@ -41,3 +65,74 @@ a{
     font-size: larger;
     
 }
+
+.main{
+    border: 2px solid black;
+    height: 400px;
+    text-align: center;
+    padding-top: 150px;
+    font-size: larger;
+    font-weight: lighter;
+    padding-right:200px;
+    padding-left: 200px;
+}
+
+.hiring{
+    color: pink;
+    padding-bottom: 20px;
+}
+
+.hire{
+    padding-bottom: 10px;
+}
+
+.info{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.btn{
+    color: black;
+    background-image: linear-gradient(pink,rgb(219, 114, 132), rgb(235, 40, 72));
+}
+
+button{
+    color: black;
+    background-color: pink;
+    border:3px solid rgb(168, 56, 74);
+    padding: 5px 5px 5px 5px;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    padding: 40px 80px 40px 80px;
+    height: 300px;
+    background-color: beige;
+    
+}
+
+.contain{
+    display:grid;
+    grid-template-rows: repeat(3,2fr);
+    grid-auto-columns: calc((100vh - 3em) / 4);
+    grid-auto-flow: column;
+    grid-gap: 1em;
+    height: 100vh;
+    padding-top: 40px 80px 40px 80px;
+
+
+}
+
+
+/* Hide the paragraph by default */
+#why-choose-us .advantage p {
+    display: none;
+  }
+  
+  /* Show the paragraph on hover */
+  #why-choose-us .advantage:hover p {
+    display: block;
+  }
+  
