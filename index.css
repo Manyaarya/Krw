@@ -3,6 +3,14 @@
 
 }
 
+#login{
+    border: 2px solid pink;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20%;
+    color: #0a0003;
+    background-color: rgb(218, 74, 134);
+}
+
 nav ul{
     border: 2px solid pink;
     display: flex;
@@ -31,6 +39,74 @@ a{
     -moz-text-fill-color: transparent;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+}
+
+/* Styling for the job board section */
+.job-board-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px 60px 60px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the job content */
+.job-content {
+    flex: 1;
+    border: 2px solid black;
+    margin-right: 50px;
+    padding: 40px 40px 40px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+}
+
+.job-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.job-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the CTA button */
+.cta-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fc70a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff1e61;
+}
+
+/* Styling for the job image */
+.job-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    margin-left: 80px;
+}
+
 .hero-section{
     display: flex;
     justify-content: center;
@@ -39,141 +115,513 @@ a{
     font-size: 35px;
     text-align: center;
     background-color: aliceblue;
-    background-image: linear-gradient(60deg,#393646,#4F4557,#6D5D6E,#F4EEE0);
-}
-
-#ourservices{
-    display: block;
-    margin-top: 0;
-    text-align:center;
-    font-size: 60px;
-    padding-top: 10px;
-    padding-left: 40px;
-    background-color: #dd2267;
-    background-image: linear-gradient(15deg, #ff1e61, #8b5b69,#c8e647);
-    background-size: 100%;
-    background-repeat: repeat;
-    text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-
-}
-.services-section{
-    height: 300px;
-    
-    display: grid;
-    justify-content: center;
-    
-    font-size: 20px;
+    background-image: linear-gradient(60deg,#F2BED1,#FDCEDF,#F8E8EE,#F9F5F6);
     position: relative;
-    
-
 }
 
-.para{
-    padding: 10px 300px 5px 350px;
+.hero-content {
+    animation: fadeIn 2s ease-out; /* Apply the fadeIn animation to the content */
+}
+
+
+.hero-section button {
+    background-color: #fc70a1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: slideIn 1s ease-out 0.5s; /* Apply the slideIn animation to the button */
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .cta-button {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover effect for the button */
+.hero-section button:hover {
+    background-color: #ff1e61;
+}
+
+
+/* Keyframe animations */
+@keyframes slideIn {
+    0% { transform: translateX(-20px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Styling for the #ourservices section */
+/* Keyframe animations */
+@keyframes slideIn {
+    0% { transform: translateX(-20px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Styling for the #ourservices section */
+#ourservices {
+    font-size: 36px;
+    color: transparent;
+    text-align: center;
+    margin-left: 550px;
+    margin-top: 20px;
+    background: linear-gradient(15deg, #ff1e61, #8b5b69, #c8e647);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: fadeIn 1s ease-out;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 2px solid #dd2267;
     
-    text-align: centre;
-    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+#ourservices:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for .para */
+.para {
+    font-size: 18px;
+    color: #636363;
+    text-align: center;
+    margin-top: 10px;
     font-style: italic;
-    
-    
+    animation: fadeIn 1s ease-out 0.5s;
+}
+
+/* Keyframe animations */
+@keyframes slideIn {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
 
 
+/* Styling for the .services-wrapper */
+.services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    
 
-.services-section ul{
-    display: grid;
-    grid-gap: 20px;
-    width: 100%;
-    
-    font-size: small;
-    
 }
 
-.services-section ul li{
-   
+/* Styling for the .services-section */
+.services-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out 0.5s;
+    
+    margin: 0px 40px 0px 40px;
+}
+
+/* Styling for .services-section ul li */
+.services-section ul li {
     list-style-type: none;
-    padding: 0px 15px 10px 10px;
+    padding: 20px;
     font-size: 15px;
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #dd2267;
-    background-image: linear-gradient(15deg, #ff1e61, #8b5b69,#2c301e);
-    background-size: 100%;
-    background-repeat: repeat;
-    text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-   
-}
-
-span{
-    display: none;
-    text-transform: capitalize;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: transparent; /* Reset background color */
-    -webkit-background-clip: initial; /* Reset background-clip */
-    -moz-background-clip: initial; /* Reset background-clip */
-    -webkit-text-fill-color: initial; /* Reset text-fill-color */
-    -moz-text-fill-color: initial; /* Reset text-fill-color */
-
-   
-
-}
-
-.services-section ul li:hover span{
-    display: block;
-    color: #ff1356;
-    background-color: #e9d9e5;
-    width: 150px;
-    font-size: small;
-    border-radius: 30%;
-    text-align: center;
-}
-
-.life-changing-section{
-    height: 500px;
+    background: linear-gradient(15deg, #f5bfcf, #578bce, #f6fce1);
+    color: rgb(75, 18, 18);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease;
+    cursor: pointer;
     display: flex;
-    border: 2px solid red;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.lifechanging{
-    display: block;
-    margin-top: 0;
-    text-align:center;
-    font-size: 60px;
-    padding-top: 10px;
-    padding-left: 40px;
-    background-color: #dd2267;
-    background-image: linear-gradient(15deg, #ff1e61, #8b5b69,#c8e647);
-    background-size: 100%;
-    background-repeat: repeat;
-    text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    
-}
-
-.life-changing-section ul{
-    list-style-type: none;
-    display: block;
+/* Styling for .services-section ul li span */
+.services-section ul li span {
+    background-color: rgba(252, 227, 227, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
     text-align: center;
-    border: 2px solid black;
-    height: 500px;
-
+    line-height: 1.3;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
-.life-changing-section ul li{
-    border: 2px solid yellow;
-    padding: 10px 40px 10px 40px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 17px;
+/* Hover effect for .services-section ul li */
+.services-section ul li:hover {
+    transform: scale(1.05);
 }
 
+/* Hover effect for .services-section ul li span */
+.services-section ul li:hover span {
+    opacity: 1;
+}
+
+/* Styling for the .slideshow-section */
+.slideshow-section {
+    flex: 1;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-right: 40px;
+    padding: 0;
+    
+    border-radius: 10px;
+
+    /* Add styles for the slideshow section */
+}
+
+/* Styling for the slideshow */
+.slideshow {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow img.active {
+    opacity: 1;
+}
+
+/* Add animation styles for the slideshow */
+@keyframes slideAnimation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Keyframe animations */
+@keyframes slideIn {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Styling for the .lifechanging section */
+.lifechanging {
+    font-size: 32px;
+    color: transparent;
+    text-align: center;
+    margin-top: 40px;
+    background: linear-gradient(15deg, #2a4a9b, #ad4564, #c8e647);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: slideIn 1s ease-out;
+    padding: 10px 400px 5px 400px;
+    border-bottom: 2px solid #dd2267;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Add hover effect */
+.lifechanging:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for the .parag */
+.parag {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    animation: slideIn 1s ease-out 0.5s;
+}
+
+/* Styling for the background image */
+.lifechanging::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../krw/bgg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Adjust the opacity of the background image */
+    z-index: -1;
+}
+
+/* Styling for a GIF background (optional) */
+ 
+.lifechanging::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../krw/bgg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none; 
+} 
+
+
+
+/* Keyframe animations */
+@keyframes slideInLeft {
+    0% { transform: translateX(-20px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Styling for the .life-changing-section */
+.life-changing-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInLeft 1s ease-out;
+}
+
+/* Styling for the list items */
+.life-changing-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.life-changing-section li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInLeft 1s ease-out;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Hover effect for list items */
+.life-changing-section li:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for text spans */
+.life-changing-section li span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    background: linear-gradient(15deg, #ff1e61, #8b5b69, #c8e647);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Additional animations */
+.life-changing-section li:nth-child(even) {
+    animation: slideInLeft 1s ease-out 0.5s;
+}
+
+/* Keyframe animations */
+@keyframes slideInRight {
+    0% { transform: translateX(20px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Styling for the .testimonial-section */
+.testimonial-section {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+/* Styling for testimonials container */
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Styling for each testimonial */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 1s ease-out;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.testimonial p:last-child {
+    font-weight: bold;
+}
+
+/* Hover effect for testimonials */
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Styling for the .featured-photographers-section */
+.featured-photographers-section {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+/* Styling for the featured photographers grid */
+.featured-photographers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Styling for each photographer card */
+.photographer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+    overflow: hidden;
+}
+
+.photographer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.photographer h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.photographer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.photographer button {
+    background-color: #fc70a1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for photographer cards */
+.photographer:hover {
+    transform: translateY(-5px);
+}
+
+/* Hover effect for contact button */
+.photographer button:hover {
+    background-color: #ff1e61;
+}
+
+/* Styling for the footer */
+footer {
+    display: block;
+    background-color: #d1cbcb;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff1e61;
+}
+
+/* Style the copyright text */
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Font Awesome icons */
+/* Make sure you include the Font Awesome CSS or link the Font Awesome CDN in your HTML */

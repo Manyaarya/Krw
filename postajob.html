@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="postajob.css">
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find-photographers.html">Find Photographers</a></li>
+                <li><a href="postajob.html">Post a Job</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Photo Blogs</a></li>
+            <li id="login"><a href="signup.html">Login / Sign Up</a></li>
+                <!-- Add other navigation links -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Content Section -->
+    <main>
+        <section class="page-title">
+            <h1>Post a Job</h1>
+            <p>Connect with talented photographers by posting your job.</p>
+        </section>
+
+        <!-- Job Posting Form -->
+        <section class="job-form">
+            <form action="submit-job.php" method="POST"> <!-- Update action and method -->
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title" required>
+
+                <label for="job-description">Job Description:</label>
+                <textarea id="job-description" name="job-description" rows="5" required></textarea>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="required-skills">Required Skills:</label>
+                <input type="text" id="required-skills" name="required-skills" required>
+
+                <label for="budget">Budget:</label>
+                <input type="number" id="budget" name="budget" required>
+
+                <label for="contact-name">Your Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

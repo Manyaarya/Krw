@@ -1,0 +1,145 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the header */
+header {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the navigation list */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+/* Styling for the navigation items */
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Styling for the navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff1e61;
+}
+
+/* Styling for the login/signup link */
+#login a {
+    background-color: #ff1e61;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#login a:hover {
+    background-color: #dd2267;
+}
+
+/* Styling for the find-photographers-header section */
+.find-photographers-header {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 80px 0;
+    position: relative;
+}
+
+.find-photographers-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.find-photographers-header p {
+    font-size: 18px;
+    color: #777;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeInDown {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Styling for the search-filters section */
+.search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the search-bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #578bce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for the filters */
+.filters {
+    display: flex;
+    align-items: center;
+}
+
+.filters label {
+    margin-right: 10px;
+}
+
+.filters select {
+    padding: 5px;
+    border-radius: 5px;
+}

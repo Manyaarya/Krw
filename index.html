@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoGenius - Find Your Perfect Photographer</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/1c4567212e.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#find-photographers">Find Photographers</a></li>
-            <li><a href="#post-job">Post a Job</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="find-photographers.html">Find Photographers</a></li>
+            <li><a href="postajob.html">Post a Job</a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#contact">Contact</a></li>
             
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#blog">Photo Blogs</a></li>
-            <li><a href="#login-signup">Login / Sign Up</a></li>
+            <li id="login"><a href="signup.html">Login / Sign Up</a></li>
         </ul>
             <!-- Navigation bar content -->
         </nav>
@@ -30,15 +32,23 @@
                 <h1>Welcome to PhotoGenius</h1>
                 <p>Your One-Stop Photography Platform</p>
                 <p>Discover Talented Photographers for Every Occasion</p>
-                <a href="#find-photographers" class="cta-button">Find Your Photographer</a>
+                <button>
+                <a href="#find-photographers" class="cta-button">Find Your Photographer</a></button>
             </div>
         </section>
 
+
+        
+
+        <div class="bgimg">
+
+        </div>
+        <!--Our-services-section-->
         <h2 id="ourservices" >What we offer!</h2>
         <p class="para">PhotoGenius is dedicated to revolutionizing the way you find and book photographers.</p>
-        <section class="services-section">
-            
-            
+        <section class="services-wrapper">
+           <section class="services-section">
+        
             <ul>
                 
                 <li>Effortless Photographer Search:<span>Easily search for photographers based on location, specialization, and availability.</span></li>
@@ -48,23 +58,56 @@
                 <li>Real-Time Availability:<span> Check photographers' real-time availability to book your sessions without any delays.</span></li>
                 <li>Photographer Portfolios:<span>Browse through photographers' portfolios and explore their creative work before making a choice.</span> </li>
             </ul>
+            </section>
+            <section class="slideshow-section">
+                <!-- Slideshow content here -->
+                <div class="slideshow">
+                    <img src="client1.jpg" alt="Slide 1">
+                    <img src="client2.jpg" alt="Slide 2">
+                    <img src="client3.jpg" alt="Slide 2">
+                    <img src="bgg.jpg" alt="Slide 2">
+                    <img src="photo1.jpg" alt="Slide 2">
+                    <img src="client3.jpg" alt="Slide 2">
+                    <img src="bgg.jpg" alt="Slide 2">
+                    <img src="photo1.jpg" alt="Slide 2">
+                    <img src="photo1.jpg" alt="Slide 2">
+                    <img src="client3.jpg" alt="Slide 2">
+                    <img src="bgg.jpg" alt="Slide 2">
+                    <img src="photo1.jpg" alt="Slide 2">
+                    <!-- Add more slides as needed -->
+                </div>
+            </section>
         </section>
+
+        <!--Job-board-section-starts-->
+        <section class="job-board-section">
+            <div class="job-image">
+                <img src="../krw/photo1.jpg" alt="Job Board Image">
+            </div>
+            <div class="job-content">
+                <h2>The #1 Job Board for Top Photography Talent</h2>
+                <p>Our job board listings attract an average of 1.1k targeted clicks per month and reach over 1 million skilled photographers globally. With a proven track record of assisting over 60,000 clients, you'll spend less time searching for qualified photographers and more time collaborating with exceptional talent.</p>
+                <button><a href="#job-board" class="cta-button">Explore Job Listings</a></button>
+            </div>
+            
+        </section>
+        
 
         
         <h2 class="lifechanging">Experience a Life-Changing Platform for Photography</h2>
-        <p class="para">At PhotoGenius, we believe that photography should be accessible and rewarding for everyone involved. Our platform is designed to create a positive impact on the photography industry:</p>
+        <p class="parag">At PhotoGenius, we believe that photography should be accessible and rewarding for everyone involved. Our platform is designed to create a positive impact on the photography industry:</p>
             
         <section class="life-changing-section">
-            
             <ul>
-              
-                <li>Empowering Photographers:<br>Young and talented photographers in their 20s can turn their passion into a profitable side hustle by showcasing their skills on our platform.</li>
-                <li>Boosting Small-Scale Studios:<br> Photography studios can use our app as a medium to reach a broader audience and connect with potential clients, enhancing their business growth.</li>
-                <li>Saving Time and Effort:<br> Clients can now easily find skilled photographers, book sessions, and make secure payments all in one place, saving time and effort in the process.</li>
-                <li>Promoting Creativity:<br> Our platform fosters creativity and artistry by connecting clients with photographers who excel in their respective genres.</li>
-                <li>Transforming Moments:<br> Capturing special moments has never been easier. Our life-changing platform ensures that clients get the perfect photographer for their precious memories.</li>
+                <li><span>Empowering Photographers:</span><br>Young and talented photographers in their 20s can turn their passion into a profitable side hustle by showcasing their skills on our platform.</li>
+                <li><span>Boosting Small-Scale Studios:</span><br> Photography studios can use our app as a medium to reach a broader audience and connect with potential clients, enhancing their business growth.</li>
+                <li><span>Saving Time and Effort:</span><br> Clients can now easily find skilled photographers, book sessions, and make secure payments all in one place, saving time and effort in the process.</li>
+                <li><span>Promoting Creativity:</span><br> Our platform fosters creativity and artistry by connecting clients with photographers who excel in their respective genres.</li>
+                <li><span>Transforming Moments:</span><br> Capturing special moments has never been easier. Our life-changing platform ensures that clients get the perfect photographer for their precious memories.</li>
             </ul>
         </section>
+<!-- Testimonial Section -->
+
 
         <section class="testimonial-section">
             <h2>What Our Clients Say</h2>
@@ -86,24 +129,43 @@
             <h2>Featured Photographers</h2>
             <div class="featured-photographers-grid">
                 <div class="photographer">
-                    <img src="photographer1.jpg" alt="Photographer 1">
+                    <img src="client1.jpg" alt="Photographer 1">
                     <h3>John Doe</h3>
                     <p>Specialization: Portraits, Events</p>
                     <p>Location: New York</p>
                     <button>Contact</button>
                 </div>
                 <div class="photographer">
-                    <img src="photographer2.jpg" alt="Photographer 2">
+                    <img src="client2.jpg" alt="Photographer 2">
                     <h3>Jane Smith</h3>
                     <p>Specialization: Landscape, Travel</p>
                     <p>Location: Los Angeles</p>
                     <button>Contact</button>
                 </div>
+                <div class="photographer">
+                    <img src="client3.jpg" alt="Photographer 3">
+                    <h3>Joseph Claus</h3>
+                    <p>Specialization: Landscape, Travel</p>
+                    <p>Location: Los Angeles</p>
+                    <button>Contact</button>
+                </div>
+            </div>
                 <!-- Add more -->
 
-                  <footer>
-        <p>&copy; 2023 PhotoGenius. All rights reserved.</p>
-    </footer>
+                <footer>
+                    <div class="footer-content">
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <p>&copy; 2023 PhotoGenius. All rights reserved.</p>
+                    </div>
+                </footer>
+                
+
+                <script src="index.js"></script>
 </body>
 </html>
 
