@@ -3,16 +3,125 @@
 
 }
 
+.bgslideshow{
+    height: 800px;
+    background-image: url(./bg1.jpg);
+    background-size: cover;
+}
+
+.mainline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin-top: 40px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.column h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.search-options {
+    position: relative;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    width: 100%;
+}
+
+.search-options.active .options {
+    display: block;
+}
+
+#search-input:focus + .options {
+    display: block;
+}
+
+/* Your existing CSS styles */
+
+/* Style for the search button */
+.column button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #111010; /* Vibrant red color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.column button:hover {
+    background-color: #ff4949; /* Slightly darker red on hover */
+}
+
+
+.tagline {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    height: 140px;
+    margin-top: 5%;
+    padding: 40px 20px 20px 20px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+
+    /* Add transition for smoother hover effect */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tagline:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Animation keyframe */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #login{
-    border: 2px solid pink;
+    border: 2px solid rgb(194, 178, 180);
     padding: 5px 5px 5px 5px;
     border-radius: 20%;
-    color: #0a0003;
-    background-color: rgb(218, 74, 134);
+    color: #faf4f6;
+    background-color: rgb(0, 0, 0);
 }
 
 nav ul{
-    border: 2px solid pink;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     padding-left: 200px;
@@ -20,16 +129,17 @@ nav ul{
     height: 70px;
     list-style-type: none;
     font-size: small;
-    font-weight: lighter;
+    font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    background-color: rgb(248, 244, 238);
+    
 }
 
 a{
-    color: black;
-    background-color: #ff1356;
-    background-image: linear-gradient(30deg, #0a0003, #af4261);
+    color: rgb(245, 241, 241);
+    background-color: #000000;
+    background-image: linear-gradient(30deg, #f8f7f7, #ffe9ef);
+    font-weight: bolder;
     background-size: 100%;
     background-repeat: repeat;
     text-decoration: none;
@@ -107,45 +217,87 @@ a{
     margin-left: 80px;
 }
 
-.hero-section{
+
+
+/* Style for the hero content */
+.hero-content {
+    position: relative !important;
+    font-size: 70px;
+    padding-left: 50px;
+    border: 2px solid black;
+    
+}
+
+.connectyou {
+    padding-left: 80px;
+}
+
+.bigimage{
+    width: auto ;
     display: flex;
     justify-content: center;
-    height: 500px;
+    margin-top: 20px;
     
-    font-size: 35px;
+}
+
+.bigimage img{
+    height: 112.5px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 40px;
+}
+
+.service {
+    flex: 1 1 calc(50% - 40px);
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    background-color: aliceblue;
-    background-image: linear-gradient(60deg,#F2BED1,#FDCEDF,#F8E8EE,#F9F5F6);
-    position: relative;
-}
-
-.hero-content {
-    animation: fadeIn 2s ease-out; /* Apply the fadeIn animation to the content */
-}
-
-
-.hero-section button {
-    background-color: #fc70a1;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
-    animation: slideIn 1s ease-out 0.5s; /* Apply the slideIn animation to the button */
-    transition: background-color 0.3s ease;
+    overflow: hidden;
 }
 
-.hero-section .cta-button {
-    text-decoration: none;
-    color: white;
+.service img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effect for the button */
-.hero-section button:hover {
-    background-color: #ff1e61;
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+.service:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
 
 /* Keyframe animations */
 @keyframes slideIn {
@@ -266,6 +418,47 @@ a{
     opacity: 1;
 }
 
+.slide-section {
+    flex: 1;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-right: 40px;
+    padding: 0;
+    
+    border-radius: 10px;
+
+    /* Add styles for the slideshow section */
+}
+
+/* Styling for the slideshow */
+.slide {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img.active {
+    opacity: 1;
+}
 /* Styling for the .slideshow-section */
 .slideshow-section {
     flex: 1;
